@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "henrynguyen5-vsc.vsc-nvm",
+    "ms-vscode.vscode-typescript-next",
+    "oxc.oxc-vscode",
+    "redhat.vscode-yaml",
+    "streetsidesoftware.code-spell-checker",
+    "wmaurer.change-case",
+    "yzhang.markdown-all-in-one"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "x-tools",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.13.1",
+  "description": "Personal tools for everyone.",
+  "author": "RoXoM <xyy94813@sina.com>",
+  "license": "MIT",
+  "keywords": [],
+  "scripts": {
+    "commitlint": "commitlint --edit",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "5.0.0",
+    "@commitlint/cli": "19.8.1",
+    "@commitlint/config-conventional": "19.8.1",
+    "@types/node": "^22.16.5",
+    "@vitest/coverage-v8": "3.2.4",
+    "eslint": "9.32.0",
+    "gray-matter": "4.0.3",
+    "husky": "9.1.7",
+    "lint-staged": "16.1.2",
+    "prettier": "3.6.2",
+    "typescript": "5.8.3",
+    "vite": "7.0.6",
+    "vite-bundle-visualizer": "1.2.1",
+    "vite-plugin-dts": "4.5.4",
+    "vitepress": "1.6.3",
+    "vitest": "3.2.4"
+  }
+}
