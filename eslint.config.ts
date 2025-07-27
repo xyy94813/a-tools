@@ -20,5 +20,6 @@ export default antfu({
   rules: {
     'comma-dangle': ['error', 'always-multiline'],
     'vitest/consistent-test-it': ['error', { fn: 'test' }],
+    'ts/consistent-type-definitions': ['error', 'type'],
   },
 })

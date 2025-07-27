@@ -1,0 +1,40 @@
+{
+  "name": "@x-tools/multiway-tree",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.13.1",
+  "description": "Common helpers and utils for multiway tree",
+  "author": "RoXoM <xyy94813@sina.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xyy94813/x-tools.git",
+    "directory": "packages/multiway-tree"
+  },
+  "keywords": [
+    "multiway-tree",
+    "tree",
+    "traverse",
+    "helpers",
+    "utils"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/types.index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "index.js",
+  "typings": "./dist/",
+  "scripts": {
+    "build": "vite build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "test": "vitest --watch",
+    "test:all": "vitest --watch"
+  },
+  "peerDependencies": {},
+  "dependencies": {}
+}
