@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.B4oIOg0i.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/bfs.md","filePath":"en-us/api/bfs.md"}'),s={name:"api/bfs.md"};function r(o,n,c,p,i,f){return a(),t("div")}const m=e(s,[["render",r]]);export{d as __pageData,m as default};
