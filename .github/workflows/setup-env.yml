@@ -1,0 +1,27 @@
+name: Setup Env And Execute Commands
+on:
+  workflow_call:
+    inputs:
+      name:
+        description: Name of the job
+        required: true
+        type: string
+      run:
+        description: Commands to run after setup
+        required: true
+        type: string
+jobs:
+  setup-env:
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - name: Install Dependencies 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: pnpm install
+      - name: ${{ inputs.name }}
+        run: ${{ inputs.run }}

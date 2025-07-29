@@ -8,6 +8,8 @@
   "keywords": [],
   "scripts": {
     "commitlint": "commitlint --edit",
+    "lint:all": "eslint .",
+    "format:all": "pnpm run lint:all --fix",
     "prepare": "husky"
   },
   "devDependencies": {

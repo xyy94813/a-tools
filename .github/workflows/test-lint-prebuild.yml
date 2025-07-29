@@ -1,0 +1,30 @@
+name: test-lint-prebuild
+on:
+  push:
+    branches-ignore:
+      - gh-pages
+  pull_request:
+    types: [opened]
+    branches:
+      - main
+permissions:
+  contents: write
+jobs:
+  unit-test:
+    uses: ./.github/workflows/setup-env.yml
+    with:
+      name: Unit Test 🔧
+      run: |
+        pnpm --filter="*" run test:all
+  lint:
+    uses: ./.github/workflows/setup-env.yml
+    with:
+      name: Lint Files 🔧
+      run: |
+        pnpm run lint:all
+  pre-build:
+    uses: ./.github/workflows/setup-env.yml
+    with:
+      name: Build Assets 🔧
+      run: |
+        pnpm --filter="*" run build
