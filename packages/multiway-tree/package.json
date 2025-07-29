@@ -19,14 +19,14 @@
   ],
   "exports": {
     ".": {
-      "types": "./dist/types.index.d.ts",
+      "types": "./dist/types/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.js"
     },
     "./package.json": "./package.json"
   },
-  "main": "index.js",
-  "typings": "./dist/",
+  "main": "./dist/index.js",
+  "typings": "./dist/types/index.d.ts",
   "scripts": {
     "build": "vite build",
     "docs:dev": "vitepress dev docs",
