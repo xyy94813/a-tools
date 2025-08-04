@@ -34,7 +34,7 @@ function traverse<TNode = TreeNode>(
 :::code-group
 
 ```js [javascript]
-import { traverse } from '@x-tools/multiway-tree'
+import { traverse } from '@a-tools/multiway-tree'
 
 const root = { children: [] }
 
@@ -44,7 +44,7 @@ traverse(root, (cur, parent) => {
 ```
 
 ```ts [typescript]
-import { traverse } from '@x-tools/multiway-tree'
+import { traverse } from '@a-tools/multiway-tree'
 
 const root = { children: [] }
 
@@ -60,7 +60,7 @@ traverse(root, (cur, parent) => {
 :::code-group
 
 ```js [javascript]
-import { traverse } from '@x-tools/multiway-tree'
+import { traverse } from '@a-tools/multiway-tree'
 
 const root = { children: [] }
 
@@ -70,7 +70,7 @@ traverse(root, (cur, parent) => {
 ```
 
 ```ts [typescript]
-import { traverse } from '@x-tools/multiway-tree'
+import { traverse } from '@a-tools/multiway-tree'
 
 const root = { children: [] }
 
@@ -86,7 +86,7 @@ traverse(root, (cur, parent) => {
 :::code-group
 
 ```js [javascript]
-import { traverse } from '@x-tools/multiway-tree'
+import { traverse } from '@a-tools/multiway-tree'
 
 const root = { child: [] }
 
@@ -96,7 +96,7 @@ traverse(root, (cur, parent) => {
 ```
 
 ```ts [typescript]
-import { traverse } from '@x-tools/multiway-tree'
+import { traverse } from '@a-tools/multiway-tree'
 
 type TreeNode = { child?: TreeNode }
 

@@ -1,4 +1,4 @@
-# x-tools
+# a-tools
 
 Personal tools for everyone.
 
@@ -6,7 +6,7 @@ Personal tools for everyone.
 
 | **Name**                                                                    | **Desc**                                   |
 | :-------------------------------------------------------------------------- | :----------------------------------------- |
-| [@x-tools/multiway-tree](https://xyy94813.github.io/x-tools/multiway-tree/) | Common helpers and utils for multiway tree |
+| [@a-tools/multiway-tree](https://xyy94813.github.io/a-tools/multiway-tree/) | Common helpers and utils for multiway tree |
 
 ## How to contribute
 
@@ -14,4 +14,4 @@ See [Contributing Guild](./Contributing.md)
 
 ## License
 
-All packages use [MIT](.LICENSE)
+All packages use [MIT](./LICENSE)

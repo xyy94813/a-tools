@@ -24,7 +24,7 @@ function toArray<TNode = TreeNode>(
 :::code-group
 
 ```js [javascript]
-import { toArray } from '@x-tools/multiway-tree'
+import { toArray } from '@a-tools/multiway-tree'
 
 const root = {
   id: 1,
@@ -40,7 +40,7 @@ toArray(root, { strategy: 'post' }).map(node => node.id) // [4,5,2,6,7,3,1]
 ```
 
 ```ts [javascript]
-import { toArray } from '@x-tools/multiway-tree'
+import { toArray } from '@a-tools/multiway-tree'
 
 type TNode = { id: number, children?: TNode[] }
 
@@ -62,7 +62,7 @@ toArray<TNode>(root).map(node => node.id) // [1,2,3,4,5,6,7]
 :::code-group
 
 ```js [javascript]
-import { toArray } from '@x-tools/multiway-tree'
+import { toArray } from '@a-tools/multiway-tree'
 
 const root = {
   id: 1,
@@ -76,7 +76,7 @@ toArray(root, { property: 'child' }).map(node => node.id) // [1,2,3,4,5,6,7]
 ```
 
 ```ts [javascript]
-import { toArray } from '@x-tools/multiway-tree'
+import { toArray } from '@a-tools/multiway-tree'
 
 type TNode = { id: number, child?: TNode[] }
 

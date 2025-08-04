@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "@x-tools/multiway-tree"
+  name: "@a-tools/multiway-tree"
   text: "Common helpers and utils for multiway tree"
   tagline: "  "
   actions:

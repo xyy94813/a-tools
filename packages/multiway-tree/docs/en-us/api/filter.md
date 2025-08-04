@@ -28,7 +28,7 @@ function filter<TNode = TreeNode>(
 :::code-group
 
 ```js [javascript]
-import { filter, toArray } from '@x-tools/multiway-tree'
+import { filter, toArray } from '@a-tools/multiway-tree'
 
 const root = {
   id: 1,
@@ -43,7 +43,7 @@ toArray(root).map(node => node.id) // [1, 2, 3, 4, 5]
 ```
 
 ```ts [javascript]
-import { filter, toArray } from '@x-tools/multiway-tree'
+import { filter, toArray } from '@a-tools/multiway-tree'
 
 type TNode = { id: number, children?: TNode[] }
 
@@ -66,7 +66,7 @@ toArray<TNode>(root).map(node => node.id) // [1,2,3,4,5,6,7]
 :::code-group
 
 ```js [javascript]
-import { filter, toArray } from '@x-tools/multiway-tree'
+import { filter, toArray } from '@a-tools/multiway-tree'
 
 const root = {
   id: 1,
@@ -81,7 +81,7 @@ toArray(root, { property: 'child' }).map(node => node.id) // [1, 2, 3, 4, 5]
 ```
 
 ```ts [javascript]
-import { filter, toArray } from '@x-tools/multiway-tree'
+import { filter, toArray } from '@a-tools/multiway-tree'
 
 type TNode = { id: number, child?: TNode[] }
 

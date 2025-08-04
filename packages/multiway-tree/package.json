@@ -1,5 +1,5 @@
 {
-  "name": "@x-tools/multiway-tree",
+  "name": "@a-tools/multiway-tree",
   "version": "1.0.0",
   "packageManager": "pnpm@10.13.1",
   "description": "Common helpers and utils for multiway tree",
@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xyy94813/x-tools.git",
+    "url": "git+https://github.com/xyy94813/a-tools.git",
     "directory": "packages/multiway-tree"
   },
   "keywords": [

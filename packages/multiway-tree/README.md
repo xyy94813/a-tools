@@ -1,4 +1,4 @@
-# @x-tools/multiway-tree
+# @a-tools/multiway-tree
 
 Common helpers and utils for multiway tree
 
@@ -7,15 +7,15 @@ Common helpers and utils for multiway tree
 :::code-group
 
 ```sh [yarn]
-yarn add @x-tools/multiway-tree
+yarn add @a-tools/multiway-tree
 ```
 
 ```sh [npm]
-npm i @x-tools/multiway-tree
+npm i @a-tools/multiway-tree
 ```
 
 ```sh [pnpm]
-pnpm add @x-tools/multiway-tree
+pnpm add @a-tools/multiway-tree
 ```
 
 :::
