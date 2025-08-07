@@ -1,4 +1,5 @@
 export * from './filter'
+export * from './getDepth'
 export * from './groupByLevel'
 export * from './model'
 export * from './toArray'
