@@ -1,4 +1,5 @@
 export * from './filter'
+export * from './findAll'
 export * from './getDepth'
 export * from './groupByLevel'
 export * from './model'
