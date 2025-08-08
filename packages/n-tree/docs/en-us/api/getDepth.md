@@ -2,17 +2,17 @@
 outline: [2, 3]
 ---
 
-# groupByLevel
+# getDepth
 
-Returns an array. Each element of the array represents a level of the tree node.
+Returns the depth of N-Tree.
 
 ## Types
 
 ```ts
-function groupByLevel<TNode = TreeNode>(
+function getDepth<TNode = TreeNode>(
   root: TNode,
   property?: string
-): TNode[][]
+): number
 ```
 
 ## Example
@@ -22,7 +22,7 @@ function groupByLevel<TNode = TreeNode>(
 :::code-group
 
 ```js [javascript]
-import { groupByLevel } from '@a-tools/multiway-tree'
+import { getDepth } from '@a-tools/n-tree'
 
 const root = {
   id: 1,
@@ -32,17 +32,12 @@ const root = {
   ],
 }
 
-groupByLevel(root).map(level => level.map(node => node.id))
-// result is:
-// [
-//   [1],
-//   [2, 3],
-//   [4, 5, 6, 7],
-// ]
+getDepth(root) // 3
+getDepth(null) // 0
 ```
 
 ```ts [javascript]
-import { groupByLevel } from '@a-tools/multiway-tree'
+import { getDepth } from '@a-tools/n-tree'
 
 type TNode = { id: number, children?: TNode[] }
 
@@ -54,13 +49,8 @@ const root: TNode = {
   ],
 }
 
-groupByLevel<TNode>(root).map(level => level.map(node => node.id))
-// result is:
-// [
-//   [1],
-//   [2, 3],
-//   [4, 5, 6, 7],
-// ]
+getDepth<TNode>(root) // 3
+getDepth(null) // 0
 ```
 
 :::
@@ -70,7 +60,7 @@ groupByLevel<TNode>(root).map(level => level.map(node => node.id))
 :::code-group
 
 ```js [javascript]
-import { groupByLevel } from '@a-tools/multiway-tree'
+import { getDepth } from '@a-tools/n-tree'
 
 const root = {
   id: 1,
@@ -80,18 +70,11 @@ const root = {
   ],
 }
 
-groupByLevel(root, 'child')
-  .map(level => level.map(node => node.id))
-// result is:
-// [
-//   [1],
-//   [2, 3],
-//   [4, 5, 6, 7],
-// ]
+getDepth(root, 'child') // 3
 ```
 
 ```ts [javascript]
-import { groupByLevel } from '@a-tools/multiway-tree'
+import { getDepth } from '@a-tools/n-tree'
 
 type TNode = { id: number, child?: TNode[] }
 
@@ -103,14 +86,7 @@ const root: TNode = {
   ],
 }
 
-groupByLevel<TNode>(root, 'child')
-  .map(level => level.map(node => node.id))
-// result is:
-// [
-//   [1],
-//   [2, 3],
-//   [4, 5, 6, 7],
-// ]
+getDepth<TNode>(root, 'child') // 3
 ```
 
 :::

@@ -1,7 +1,7 @@
 import type { TreeNode } from './model'
 
 /**
- * Note: in-place filter function for multiway trees.
+ * Note: in-place filter function for n-trees.
  */
 export function filter<TNode = TreeNode>(
   root: TNode | undefined | null,

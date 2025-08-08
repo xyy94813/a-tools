@@ -1,17 +1,18 @@
 {
-  "name": "@a-tools/multiway-tree",
+  "name": "@a-tools/n-tree",
   "version": "1.0.0",
   "packageManager": "pnpm@10.13.1",
-  "description": "Common helpers and utils for multiway tree",
+  "description": "Common helpers and utils for n-tree",
   "author": "RoXoM <xyy94813@sina.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xyy94813/a-tools.git",
-    "directory": "packages/multiway-tree"
+    "directory": "packages/n-tree"
   },
   "keywords": [
-    "multiway-tree",
+    "n-tree",
+    "n-tree",
     "tree",
     "traverse",
     "helpers",

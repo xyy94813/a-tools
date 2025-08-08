@@ -27,7 +27,7 @@ function findAll<TNode = TreeNode>(
 :::code-group
 
 ```js [javascript]
-import { findAll } from '@a-tools/multiway-tree'
+import { findAll } from '@a-tools/n-tree'
 
 const root = {
   id: 1,
@@ -42,7 +42,7 @@ findAll(root, node => !!(node.id % 2))
 ```
 
 ```ts [typescript]
-import { findAll } from '@a-tools/multiway-tree'
+import { findAll } from '@a-tools/n-tree'
 
 type TNode = { id: number, children?: TNode[] }
 
@@ -65,7 +65,7 @@ findAll<TNode>(root, node => !!(node.id % 2))
 :::code-group
 
 ```js [javascript]
-import { findAll } from '@a-tools/multiway-tree'
+import { findAll } from '@a-tools/n-tree'
 
 const root = {
   id: 1,
@@ -80,7 +80,7 @@ findAll(root, node => node.id % 2, { property: 'child' })
 ```
 
 ```ts [typescript]
-import { findAll } from '@a-tools/multiway-tree'
+import { findAll } from '@a-tools/n-tree'
 
 type TNode = { id: number, child?: TNode[] }
 

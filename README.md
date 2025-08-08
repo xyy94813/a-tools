@@ -6,7 +6,7 @@ Personal tools for everyone.
 
 | **Name**                                                                    | **Desc**                                   |
 | :-------------------------------------------------------------------------- | :----------------------------------------- |
-| [@a-tools/multiway-tree](https://xyy94813.github.io/a-tools/multiway-tree/) | Common helpers and utils for multiway tree |
+| [@a-tools/n-tree](https://xyy94813.github.io/a-tools/n-tree/) | Common helpers and utils for n-tree |
 
 ## How to contribute
 

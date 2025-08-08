@@ -2,17 +2,17 @@
 outline: [2, 3]
 ---
 
-# getDepth
+# groupByLevel
 
-Returns the depth of N-Tree.
+Returns an array. Each element of the array represents a level of the tree node.
 
 ## Types
 
 ```ts
-function getDepth<TNode = TreeNode>(
+function groupByLevel<TNode = TreeNode>(
   root: TNode,
   property?: string
-): number
+): TNode[][]
 ```
 
 ## Example
@@ -22,7 +22,7 @@ function getDepth<TNode = TreeNode>(
 :::code-group
 
 ```js [javascript]
-import { getDepth } from '@a-tools/multiway-tree'
+import { groupByLevel } from '@a-tools/n-tree'
 
 const root = {
   id: 1,
@@ -32,12 +32,17 @@ const root = {
   ],
 }
 
-getDepth(root) // 3
-getDepth(null) // 0
+groupByLevel(root).map(level => level.map(node => node.id))
+// result is:
+// [
+//   [1],
+//   [2, 3],
+//   [4, 5, 6, 7],
+// ]
 ```
 
 ```ts [javascript]
-import { getDepth } from '@a-tools/multiway-tree'
+import { groupByLevel } from '@a-tools/n-tree'
 
 type TNode = { id: number, children?: TNode[] }
 
@@ -49,8 +54,13 @@ const root: TNode = {
   ],
 }
 
-getDepth<TNode>(root) // 3
-getDepth(null) // 0
+groupByLevel<TNode>(root).map(level => level.map(node => node.id))
+// result is:
+// [
+//   [1],
+//   [2, 3],
+//   [4, 5, 6, 7],
+// ]
 ```
 
 :::
@@ -60,7 +70,7 @@ getDepth(null) // 0
 :::code-group
 
 ```js [javascript]
-import { getDepth } from '@a-tools/multiway-tree'
+import { groupByLevel } from '@a-tools/n-tree'
 
 const root = {
   id: 1,
@@ -70,11 +80,18 @@ const root = {
   ],
 }
 
-getDepth(root, 'child') // 3
+groupByLevel(root, 'child')
+  .map(level => level.map(node => node.id))
+// result is:
+// [
+//   [1],
+//   [2, 3],
+//   [4, 5, 6, 7],
+// ]
 ```
 
 ```ts [javascript]
-import { getDepth } from '@a-tools/multiway-tree'
+import { groupByLevel } from '@a-tools/n-tree'
 
 type TNode = { id: number, child?: TNode[] }
 
@@ -86,7 +103,14 @@ const root: TNode = {
   ],
 }
 
-getDepth<TNode>(root, 'child') // 3
+groupByLevel<TNode>(root, 'child')
+  .map(level => level.map(node => node.id))
+// result is:
+// [
+//   [1],
+//   [2, 3],
+//   [4, 5, 6, 7],
+// ]
 ```
 
 :::

@@ -14,7 +14,7 @@ function createMockTree(childrenPropertyName = 'children') {
 const root = createMockTree()
 
 describe('filter', () => {
-  test('should filter nodes in a multiway tree', () => {
+  test('should filter nodes in a n-tree', () => {
     expect(filter(root, (node, pNode) => !pNode || node.id % 2 === pNode.id % 2)).toEqual({
       id: 1,
       children: [
