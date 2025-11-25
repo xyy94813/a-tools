@@ -1,5 +1,6 @@
 // import matter from 'gray-matter'
 import { defineConfig } from 'vitepress'
+import llmstxt from 'vitepress-plugin-llms'
 import pkg from '../../package.json'
 import enUS from './en.mts'
 
@@ -20,5 +21,10 @@ export default defineConfig({
   },
   locales: {
     root: { label: 'English', lang: 'en-US', ...enUS },
+  },
+  vite: {
+    plugins: [
+      llmstxt({ workDir: 'en-us' }) as any,
+    ],
   },
 })

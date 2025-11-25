@@ -1,6 +1,6 @@
 {
   "name": "@a-tools/n-tree",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@10.13.1",
   "description": "Common helpers and utils for n-tree",
   "author": "RoXoM <xyy94813@sina.com>",
