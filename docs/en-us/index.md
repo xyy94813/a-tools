@@ -8,7 +8,7 @@ hero:
 features:
   - title: "@a-tools/n-tree"
     details: Common helpers and utils for n-tree
-    link: ./n-tree/
+    link: https://xyy94813.github.io/a-tools/n-tree/
   - title: etc..
     details: find node, tree to arr...
 ---
