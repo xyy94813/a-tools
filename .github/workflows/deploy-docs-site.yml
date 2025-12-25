@@ -19,10 +19,12 @@ jobs:
         uses: ./.github/actions/setup-env
       - name: Build Docs 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
+          pnpm run docs:build
           pnpm --filter="*" run docs:build
       - name: Prepare Docs Folder 📂
         run: |
-          mkdir docs-site
+          # mkdir docs-site
+          mv docs/.vitepress/dist docs-site
           for file in ./packages/*
           do
               if test -d $file
