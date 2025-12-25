@@ -1,0 +1,40 @@
+{
+  "name": "@a-tools/converter",
+  "version": "0.0.1",
+  "packageManager": "pnpm@10.13.1",
+  "description": "Common converter",
+  "author": "RoXoM <xyy94813@sina.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xyy94813/a-tools.git",
+    "directory": "packages/converter"
+  },
+  "keywords": [
+    "converter",
+    "transform",
+    "helpers",
+    "utils"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "default": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "typings": "./dist/types/index.d.ts",
+  "scripts": {
+    "build": "vite build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "test": "vitest --watch --coverage",
+    "test:all": "vitest --coverage"
+  },
+  "peerDependencies": {},
+  "dependencies": {}
+}
