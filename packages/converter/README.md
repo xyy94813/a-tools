@@ -1,4 +1,4 @@
-# @a-tools/n-tree
+# @a-tools/converter
 
 Common helpers and utils for n-tree
 
@@ -7,15 +7,15 @@ Common helpers and utils for n-tree
 :::code-group
 
 ```sh [yarn]
-yarn add @a-tools/n-tree
+yarn add @a-tools/converter
 ```
 
 ```sh [npm]
-npm i @a-tools/n-tree
+npm i @a-tools/converter
 ```
 
 ```sh [pnpm]
-pnpm add @a-tools/n-tree
+pnpm add @a-tools/converter
 ```
 
 :::
